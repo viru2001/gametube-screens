@@ -9,7 +9,6 @@ import { KebabMenu } from "../index";
 import { useDrawer } from "../../context/DrawerContext";
 const VideoCard = () => {
   const [isOpen] = useDrawer();
-  console.log(isOpen);
   return (
     <Card
       sx={{

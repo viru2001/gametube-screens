@@ -7,6 +7,7 @@ import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { styled } from "@mui/material/styles";
 import { SearchBox } from "../index";
+import {  useNavigate } from "react-router-dom";
 
 const MyAppBar = styled(MuiAppBar)(({ theme }) => ({
   zIndex: theme.zIndex.drawer + 1,
@@ -17,6 +18,9 @@ const MyAppBar = styled(MuiAppBar)(({ theme }) => ({
 }));
 
 const AppBar = ({ open, handleDrawerClose, handleDrawerOpen }) => {
+  const navigate = useNavigate();
+  const handleLoginBtnClick = () => navigate("/login");
+
   return (
     <MyAppBar position="fixed">
       <Box sx={{ display: "flex" }}>
@@ -52,6 +56,7 @@ const AppBar = ({ open, handleDrawerClose, handleDrawerOpen }) => {
               color: "#363636",
               ":hover": { backgroundColor: "secondary.light" },
             }}
+            onClick={handleLoginBtnClick}
           >
             Login
           </Button>

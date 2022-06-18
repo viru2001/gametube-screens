@@ -44,7 +44,7 @@ function PlaylistDialog(props) {
           >
             <ListItemAvatar>
               <Avatar
-                sx={{ color: "secondary.main", bgcolor: "primary.light" }}
+                sx={{ color: "secondary.main", bgcolor: "primary.faint" }}
               >
                 <AddIcon />
               </Avatar>
@@ -72,7 +72,7 @@ function PlaylistDialog(props) {
             variant="filled"
             color="secondary"
             sx={{
-              bgcolor: "primary.light",
+              bgcolor: "primary.faint",
               m: 1,
             }}
           />

@@ -139,7 +139,7 @@ const Drawer = ({ content }) => {
       {content}
       {/* <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, mt: 8, backgroundColor: "primary.light" }}
+        sx={{ flexGrow: 1, p: 3, mt: 8, backgroundColor: "primary.faint" }}
       >
         <Grid
           container

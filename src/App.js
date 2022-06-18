@@ -6,8 +6,7 @@ import { Router } from "./frontend/routes/Router";
 function App() {
   return (
     <>
-      <CssBaseline />
-      <Drawer content={<VideoList />} />
+      <CssBaseline enableColorScheme />
       <Router />
     </>
   );

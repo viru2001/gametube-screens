@@ -1,11 +1,10 @@
 import React from "react";
-import { Drawer, VideoCard } from "../../components";
+import { Drawer, VideoList } from "../../components";
 
 const Home = () => {
   return (
     <>
-      {/* <Drawer /> */}
-      {/* <VideoCard /> */}
+      <Drawer content={<VideoList />} />
     </>
   );
 };
